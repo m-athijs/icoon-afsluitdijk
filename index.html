@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" manifest="adi.appcache">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <script type="text/javascript" src="functions.js"></script>
+    <title>Afsluitdijk Icoon</title>
+</head>
+
+<body>
+
+    <div id="language">
+        <div>SELECTEER TAAL</div>
+        <div>SELECT LANGUAGE</div>
+        <a href="javascript: selectLanguage('nl');">
+            <img src="flag_nl.png" />
+        </a>&nbsp;
+        <a href="javascript: selectLanguage('en');">
+            <img src="flag_uk.png" />
+        </a>
+    </div>
+
+    <div id="status">
+        <div class="loader"></div>&nbsp;DOWNLOADING AUDIO TOUR
+        <br/><br />
+        <div>HOLD ON, THIS MIGHT TAKE A WHILE (
+            <span id="loaded"></span> % LOADED)</div>
+    </div>
+    <br />
+    <br />
+
+    <div id="onlinestatus"></div>
+
+    <br />
+    <br />
+
+    <!-- <div id="cacheevent"></div>
+    <div id="cachestatus"></div> -->
+
+    <a id="download" href="pinkfloyd2.mp3" download="pinkfloyd2.mp3">DOWNLOAD MP3</a>
+
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
